@@ -27,6 +27,15 @@ function indiceDoMenor(arrayDeNumeros) {
 };
 
 // Requisito 4 - Crie a função maiorPalavra
+function maiorPalavra(arrayDeStrings) {
+  let palavraDaVez = arrayDeStrings[0];
+  for (let index = 0; index < arrayDeStrings.length; index += 1) {
+    if (arrayDeStrings[index].length > palavraDaVez.length) {
+      palavraDaVez = arrayDeStrings[index];
+    };
+  };
+  return palavraDaVez;
+};
 
 // Requisito 5 - Crie a função maisRepetido
 
