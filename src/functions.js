@@ -1,4 +1,8 @@
 // Requisito 1 - Crie a função verificaPalindromo
+function verificaPalindromo(palavra) {
+  let palavraReversa = palavra.split('').reverse().join('');
+  return palavra === palavraReversa;
+};
 
 // Requisito 2 - Crie a função indiceDoMaior
 
@@ -14,11 +18,11 @@
 
 // Não modifique essas linhas
 module.exports = {
-  verificaPalindromo: typeof verificaPalindromo === 'function' ? verificaPalindromo : (() => {}),
-  indiceDoMaior: typeof indiceDoMaior === 'function' ? indiceDoMaior : (() => {}),
-  indiceDoMenor: typeof indiceDoMenor === 'function' ? indiceDoMenor : (() => {}),
-  maiorPalavra: typeof maiorPalavra === 'function' ? maiorPalavra : (() => {}),
-  maisRepetido: typeof maisRepetido === 'function' ? maisRepetido : (() => {}),
-  somatorio: typeof somatorio === 'function' ? somatorio : (() => {}),
-  verificaFimPalavra: typeof verificaFimPalavra === 'function' ? verificaFimPalavra : (() => {}),
+  verificaPalindromo: typeof verificaPalindromo === 'function' ? verificaPalindromo : (() => { }),
+  indiceDoMaior: typeof indiceDoMaior === 'function' ? indiceDoMaior : (() => { }),
+  indiceDoMenor: typeof indiceDoMenor === 'function' ? indiceDoMenor : (() => { }),
+  maiorPalavra: typeof maiorPalavra === 'function' ? maiorPalavra : (() => { }),
+  maisRepetido: typeof maisRepetido === 'function' ? maisRepetido : (() => { }),
+  somatorio: typeof somatorio === 'function' ? somatorio : (() => { }),
+  verificaFimPalavra: typeof verificaFimPalavra === 'function' ? verificaFimPalavra : (() => { }),
 };
