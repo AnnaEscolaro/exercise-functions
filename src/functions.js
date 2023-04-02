@@ -5,8 +5,26 @@ function verificaPalindromo(palavra) {
 };
 
 // Requisito 2 - Crie a função indiceDoMaior
+function indiceDoMaior(arrayDeNumeros) {
+  let numeroDaVez = arrayDeNumeros[0];
+  for (let index = 0; index < arrayDeNumeros.length; index += 1) {
+    if (arrayDeNumeros[index] > numeroDaVez) {
+      numeroDaVez = arrayDeNumeros[index];
+    };
+  };
+  return arrayDeNumeros.indexOf(numeroDaVez);
+};
 
 // Requisito 3 - Crie a função indiceDoMenor
+function indiceDoMenor(arrayDeNumeros) {
+  let numeroDaVez = arrayDeNumeros[0];
+  for (let index = 0; index < arrayDeNumeros.length; index += 1) {
+    if (arrayDeNumeros[index] < numeroDaVez) {
+      numeroDaVez = arrayDeNumeros[index];
+    };
+  };
+  return arrayDeNumeros.indexOf(numeroDaVez);
+};
 
 // Requisito 4 - Crie a função maiorPalavra
 
