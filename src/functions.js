@@ -38,6 +38,24 @@ function maiorPalavra(arrayDeStrings) {
 };
 
 // Requisito 5 - Crie a função maisRepetido
+function maisRepetido(arrayNumerosRepetidos) {
+  let contador = 0;
+  let contadorFinal = 0;
+  let numeroMaisRepetido = 0;
+  for (let index = 0; index < arrayNumerosRepetidos.length; index += 1) {
+    for (let indexNumeroDaVez = 0; indexNumeroDaVez < arrayNumerosRepetidos.length; indexNumeroDaVez += 1) {
+      if (arrayNumerosRepetidos[index] === arrayNumerosRepetidos[indexNumeroDaVez]) {
+        contador += 1;
+      }
+    }
+    if (contador > contadorFinal) {
+      contadorFinal = contador;
+      numeroMaisRepetido = arrayNumerosRepetidos[index];
+    }
+    contador = 0;
+  }
+  return numeroMaisRepetido;
+}
 
 // Requisito 6 - Crie a função somatorio
 
