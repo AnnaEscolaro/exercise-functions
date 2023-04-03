@@ -58,6 +58,19 @@ function maisRepetido(arrayNumerosRepetidos) {
 }
 
 // Requisito 6 - Crie a função somatorio
+function somatorio(numNatural) {
+  let somatorio = numNatural;
+  if (numNatural < 0) {
+    console.log('Erro. Número negativo');
+    return false;
+  }
+  for (let index = numNatural - 1; index > 0; index -= 1) {
+    somatorio += index;
+    // numNatural += (numNatural[index] - 1);
+  }
+  return somatorio;
+}
+console.log(somatorio(5));
 
 // Requisito 7 - Crie a função verificaFimPalavra
 
