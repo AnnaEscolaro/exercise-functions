@@ -68,9 +68,17 @@ function somatorio(numNatural) {
   }
   return somatorio;
 }
-console.log(somatorio(5));
 
 // Requisito 7 - Crie a função verificaFimPalavra
+function verificaFimPalavra(palavra1, palavra2) {
+  if (palavra1.slice(palavra2.length - 1).includes(palavra2)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(verificaFimPalavra('joaofernando', 'fernan'));
 
 // Não modifique essas linhas
 module.exports = {
