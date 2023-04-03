@@ -61,12 +61,10 @@ function maisRepetido(arrayNumerosRepetidos) {
 function somatorio(numNatural) {
   let somatorio = numNatural;
   if (numNatural < 0) {
-    console.log('Erro. Número negativo');
-    return false;
+    return 'ERRO';
   }
   for (let index = numNatural - 1; index > 0; index -= 1) {
     somatorio += index;
-    // numNatural += (numNatural[index] - 1);
   }
   return somatorio;
 }
